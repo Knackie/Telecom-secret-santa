@@ -19,11 +19,11 @@ class Mail:
     class Credentials:
         """ References the user's credentials
         """
-        LOGIN = 'pierre.bouillon@telecomnancy.net'
+        LOGIN = 'mathieu.dreyer@sii.fr'
         PASSWORD = 'ImNotDumbEnoughToPublishThat'
 
-    RECIPIENT = 'pierre.bouillon@telecomnancy.net'
-    SENDER = 'secret-santa@telecomnancy.net'
+    RECIPIENT = 'mathieu.dreyer@sii.fr'
+    SENDER = 'secret-santa@sii.fr'
     SERVER_ADDR = 'smtp.gmail.com'
     SERVER_PORT = 587
     SUBJECT = '🎁 [Secret Santa] Nom de la personne à qui faire plaisir !'
