@@ -12,7 +12,7 @@ from student import Student
 from utils import Mail
 
 BASE_DATA_FILE = './data/students.txt'
-MAIL_DOMAIN = '@telecomnancy.net'
+MAIL_DOMAIN = '@sii.fr'
 
 
 def fetch_participants(data_file: str = BASE_DATA_FILE) -> List[Student]:
@@ -90,16 +90,16 @@ def generate_mail_content(receiver: Student, assigned: Student) -> bytes:
     return '\n'.join((
         f'Ho ho ho {receiver.first_name()} ! 🎅',
         '',
-        'Prêt pour le retour des Pères (et Mères) Noël secret.e.s ? 🤶',
+        'Prêt pour les Pères Noël secrets ? 🤶',
         '',
         'Avant tout, petit rappel des règles (on fait monter le suspens):',
-        '\t- Pour les cadeaux, l\'idéal est de ne pas dépasser une dizaine d\'euros (même si bon, on est apprentis)',
+        '\t- Pour les cadeaux, l\'idéal est de ne pas dépasser une vingtaine d\'euros',
         '\t- Évidemment, et même si c\'est super tentant: ne dis pas qui tu as ! Ça gâcherait vraiment le coté',
         '\t  fun du jeu si tout le monde sait à l\'avance (surtout la personne concernée !)',
         '\t- Enfin, si jamais il y a le moindre soucis, n\'hésite pas à venir m\'en parler 🚑',
         '',
         f'Sans plus de suspens, tu seras le Père Noël secret de ... {assigned.fullname.upper()} !',
-        'Cette année le jour du déballage sera le 13 décembre.',
+        'Cette année le jour du déballage sera le 21 décembre.',
         '',
         'Bon courage pour trouver un joli cadeau, et joyeux Noël en avance !',
         '',
